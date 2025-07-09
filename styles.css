@@ -1,0 +1,111 @@
+/* Layout principal */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+}
+
+.toolbar {
+    width: 300px;
+    background-color: #f4f4f4df;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.canvas-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+canvas {
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+/* Botones generales */
+button {
+    font-weight: 600;
+    padding: 14px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Herramientas y acciones */
+.toolbar button:not(.color) {
+    background-color: #ddd;
+}
+
+.toolbar button:not(.color):hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+}
+
+button.active {
+    background-color: #4287f5 !important;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Paleta de colores */
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Colores específicos por botón */
+button.color[data-color="#ff0000"] {
+    background-color: #ff0000;
+    color: white;
+}
+
+button.color[data-color="#00ff00"] {
+    background-color: #00ff00;
+    color: black;
+}
+
+button.color[data-color="#0000ff"] {
+    background-color: #0000ff;
+    color: white;
+}
+
+button.color[data-color="#ffff00"] {
+    background-color: #ffff00;
+    color: black;
+}
+
+button.color[data-color="#704f38"] {
+    background-color: #704f38;
+    color: white;
+}
+
+button.color[data-color="#000000"] {
+    background-color: #000000;
+    color: white;
+}
+
+button.color[data-color="#ffffff"] {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+/* Hover y estado activo de color */
+button.color:hover {
+    outline: 2px solid #999;
+}
+
+button.color.active {
+    outline: 2px solid #000;
+    transform: scale(1.1);
+}
