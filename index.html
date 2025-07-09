@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+
+<body>
+
+    <div class="toolbar">
+        <h3>Herramientas</h3>
+        <button id="pin">Pincel</button>
+        <button id="lin">Línea</button>
+        <button id="rect">Rectángulo</button>
+        <button id="cir">Círculo</button>
+        <button id="bor">Borrador</button>
+
+        <h3>Colores</h3>
+        <div class="colors">
+            <button class="color" data-color="#ff0000">Rojo</button>
+            <button class="color" data-color="#00ff00">Verde</button>
+            <button class="color" data-color="#0000ff">Azul</button>
+            <button class="color" data-color="#ffff00">Amarillo</button>
+            <button class="color" data-color="#704f38">Cafe</button>
+            <button class="color" data-color="#000000">Negro</button>
+            <button class="color" data-color="#ffffff">Blanco</button>
+        </div>
+
+        <h3>Acciones</h3>
+        <button id="limpiar">Limpiar</button>
+        <button id="guardar">Guardar</button>
+    </div>
+
+    <div class="canvas-container">
+        <h3>Pizarrón</h3>
+        <canvas id="pintar" width="800" height="600"></canvas>
+    </div>
+
+</body>
+</html>
