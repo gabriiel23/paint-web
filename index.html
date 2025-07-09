@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
     <title>Canvas</title>
 </head>
 
@@ -12,36 +11,39 @@
 
     <div class="toolbar">
         <h2>- Herramientas</h2>
-        <button id="pin">Pincel</button>
-        <button id="lin">Línea</button>
-        <button id="rect">Rectángulo</button>
-        <button id="cir">Círculo</button>
-        <button id="bor">Borrador</button>
+        <button id="pin">🖌️ Pincel</button>
+        <button id="lin">➖ Línea</button>
+        <button id="rect">🔲 Rectángulo</button>
+        <button id="cir">⭕ Círculo</button>
+        <button id="bor">✖️ Borrador</button>
 
         <br>
         
         <h2>- Colores</h2>
         <div class="colors">
-            <button class="color" data-color="#ff0000">Rojo</button>
-            <button class="color" data-color="#00ff00">Verde</button>
-            <button class="color" data-color="#0000ff">Azul</button>
-            <button class="color" data-color="#ffff00">Amarillo</button>
-            <button class="color" data-color="#704f38">Cafe</button>
             <button class="color" data-color="#000000">Negro</button>
-            <button class="color" data-color="#ffffff">Blanco</button>
+            <button class="color" data-color="#ff0000">Rojo</button>
+            <button class="color" data-color="#0000ff">Azul</button>
+            <button class="color" data-color="#00ff00">Verde</button>
+            <button class="color" data-color="#ffff00">Amarillo</button>
+            <button class="color" data-color="#eb9300">Naranja</button>
+            <button class="color" data-color="#7b00ab">Morado</button>
+            <button class="color" data-color="#704f38">Cafe</button>
         </div>
 
         <br>
 
         <h2>- Acciones</h2>
-        <button id="limpiar">Limpiar</button>
-        <button id="guardar">Guardar</button>
+        <button id="limpiar">🧽​ ​Limpiar</button>
+        <button id="guardar">🗃️ Guardar</button>
     </div>
 
     <div class="canvas-container">
         <h1>Pizarrón</h1>
         <canvas id="pintar" width="800" height="600"></canvas>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
